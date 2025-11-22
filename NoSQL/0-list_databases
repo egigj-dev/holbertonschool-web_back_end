@@ -1,2 +1,5 @@
-// Creates or uses the database my_db
-use my_db
+#!/bin/bash
+# 0-list_databases
+# Lists all databases in MongoDB
+
+mongo --quiet --eval "db.adminCommand('listDatabases').databases.forEach(function(d) { print(d.name + '\t' + d.sizeOnDisk.toFixed(3) + 'GB'); })"
