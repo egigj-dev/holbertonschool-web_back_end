@@ -1,5 +1,2 @@
 #!/bin/bash
-# 0-list_databases
-# Lists all databases in MongoDB
-
 use my_db
